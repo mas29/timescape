@@ -197,6 +197,10 @@ perturbations <- data.frame( pert_name = c("Chemotherapy"),
 timescape(clonal_prev = clonal_prev, tree_edges = tree_edges, perturbations = perturbations)
 ```
 
+# Obtaining the data 
+
+To transform mutational variant allele frequency information into clonal prevalences, first use PyClone (Roth et al., 2014) to obtain mutation clusters, then input these mutation clusters into CITUP (Malikic et al., 2016), which will provide a clonal phylogeny and the prevalences of each clone.
+
 # Documentation 
 
 To view the documentation for TimeScape, type the following command in R:
@@ -211,4 +215,8 @@ References:
 
 Ding, Li, et al. "Clonal evolution in relapsed acute myeloid leukaemia revealed by whole-genome sequencing." Nature 481.7382 (2012): 506-510.
 
+Malikic, Salem, et al. "Clonality inference in multiple tumor samples using phylogeny." Bioinformatics 31.9 (2015): 1349-1356.
+
 McPherson, Andrew, et al. "Divergent modes of clonal spread and intraperitoneal mixing in high-grade serous ovarian cancer." Nature genetics (2016).
+
+Roth, Andrew, et al. "PyClone: statistical inference of clonal population structure in cancer." Nature methods 11.4 (2014): 396-398.
