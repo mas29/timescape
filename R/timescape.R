@@ -126,6 +126,7 @@ timescape <- function(clonal_prev,
 #' timescapeOutput(1, '100%', '300px')
 #' timescapeOutput(1, '80%', '300px')
 #' @export
+#' @rdname helpers
 #' @return None
 timescapeOutput <- function(outputId, width = "100%", height = "400px"){
   htmlwidgets::shinyWidgetOutput(outputId, "timescape", width, height, 
@@ -138,6 +139,7 @@ timescapeOutput <- function(outputId, width = "100%", height = "400px"){
 #' @param env -- environment for Shiny
 #' @param quoted -- default is FALSE 
 #' @export
+#' @rdname helpers
 #' @return None
 renderTimescape <- function(expr, env = parent.frame(), quoted = FALSE) {
   if (!quoted) { expr <- substitute(expr) } # force quoted

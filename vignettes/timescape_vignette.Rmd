@@ -34,7 +34,7 @@ The second visualization is of the metastatic ovarian cancer patient 7 from McPh
 
 ```{r, echo=FALSE}
 library(devtools)  
-#install_bitbucket("shahlabbcca/timescape")  
+install_bitbucket("shahlabbcca/timescape")  
 library(timescape)  
 ```
 ```{r, echo=FALSE}
